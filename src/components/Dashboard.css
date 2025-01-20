@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  background-color: #f8f9fa;
+  min-height: screen.height;
+}
+
+.task-column {
+  background-color: #ebecf0;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: calc(100vh - 150px);
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  position: relative;
+  overflow: visible !important;
+}
+
+.task-card {
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  z-index: 100;
+}
+
+.column-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.task-priority {
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.priority-high {
+  background-color: #dc3545;
+}
+
+.priority-medium {
+  background-color: #ffc107;
+}
+
+.priority-low {
+  background-color: #28a745;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.4em 0.6em;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.dropdown {
+  position: static;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Style for the three dots button */
+.btn-dots {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 101;
+}
+
+/* Ensure dropdown menu appears above other cards */
+.dropdown.show .dropdown-menu {
+  z-index: 1050;
+  position: absolute;
+}

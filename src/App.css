@@ -1,0 +1,28 @@
+.ant-layout-header {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.ant-layout-header h1 {
+  color: white;
+  margin: 0;
+}
+
+.ant-layout-content {
+  background: white;
+  padding: 24px;
+  margin: 0;
+  min-height: 280px;
+  border-radius: 4px;
+}
+
+.ant-table-wrapper {
+  background: white;
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.ant-layout-sider {
+  background: white;
+}

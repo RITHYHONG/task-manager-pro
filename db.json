@@ -1,0 +1,27 @@
+{
+      "users": [
+        {
+          "id": 1,
+          "email": "test@example.com",
+          "password": "password123"
+        }
+      ],
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Complete project documentation",
+          "description": "Write comprehensive documentation for the Task Manager Pro project",
+          "dueDate": "2024-01-15",
+          "priority": "high",
+          "status": "todo"
+        },
+        {
+          "id": 2,
+          "title": "Setup development environment",
+          "description": "Install and configure all necessary development tools",
+          "dueDate": "2024-01-10",
+          "priority": "medium",
+          "status": "in_progress"
+        }
+      ]
+    }
