@@ -36,7 +36,7 @@ mongoose.connect(mongoURI, {
 const app = express();
 const PORT = 3000;
 
-CORS configuration
+// CORS configuration
 app.use(cors({
   origin: 'http://localhost:3001',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],

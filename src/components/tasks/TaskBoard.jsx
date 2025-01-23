@@ -65,6 +65,11 @@ const TaskBoard = () => {
     }
   };
 
+  const handleTaskClick = (task) => {
+    setEditingTask(task);
+    setShowModal(true);
+  };
+
   const getStatusColor = (status) => {
     switch (status) {
       case 'completed':
@@ -179,8 +184,13 @@ const TaskBoard = () => {
                       ...provided.draggableProps.style,
                       opacity: snapshot.isDragging ? 0.8 : 1
                     }}
+                    onClick={() => handleTaskClick(task)}
                   >
-                    <TaskCard task={task} />
+                    <TaskCard 
+                      task={task} 
+                      onDelete={handleDelete} 
+                      onClick={() => handleTaskClick(task)} 
+                    />
                   </div>
                 )}
               </Draggable>
